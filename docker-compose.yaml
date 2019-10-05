@@ -20,3 +20,10 @@ services:
       - prometheus-test
     ports:
       - 9090:9090
+
+  grafana:
+    image: grafana/grafana:6.4.1
+    networks:
+      - prometheus-test
+    ports:
+      - 3000:3000

@@ -1,0 +1,9 @@
+{
+  "name": "loadtester",
+  "private": true,
+  "version": "0.1.0",
+  "author": "Ryan Albon <ryanalbon@gmail.com>",
+  "dependencies": {
+    "loadtest": "^3.0.8"
+  }
+}

@@ -12,6 +12,11 @@ services:
     ports:
       - 8080:8080
 
+  loadtester:
+    build: ./loadtester
+    networks:
+      - prometheus-test
+
   prometheus:
     image: prom/prometheus:v2.12.0
     volumes:

@@ -1,8 +1,12 @@
 const express = require('express');
+const expressPinoLogger = require('express-pino-logger');
 const expressPromBundle = require('express-prom-bundle');
+
+const logger = require('./logger');
 
 const app = express();
 
+app.use(expressPinoLogger({ logger }));
 app.use(expressPromBundle({ includeMethod: true, includePath: true }));
 
 app.get('/status', (req, res) => res.status(200).end());

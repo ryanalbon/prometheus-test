@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "author": "Ryan Albon <ryanalbon@gmail.com>",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-prom-bundle": "^5.1.5",
+    "prom-client": "^11.5.3"
   }
 }

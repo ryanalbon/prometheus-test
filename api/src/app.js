@@ -1,6 +1,9 @@
 const express = require('express');
+const expressPromBundle = require('express-prom-bundle');
 
 const app = express();
+
+app.use(expressPromBundle({ includeMethod: true, includePath: true }));
 
 app.get('/status', (req, res) => res.status(200).end());
 
